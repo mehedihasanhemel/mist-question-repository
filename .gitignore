@@ -1,0 +1,14 @@
+# Sensitive configuration
+includes/config.php
+
+# User uploads
+uploads/*
+!uploads/.gitkeep
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
