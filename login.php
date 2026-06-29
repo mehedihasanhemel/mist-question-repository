@@ -342,12 +342,6 @@ body {
 
     </div><!-- /login-body -->
 
-    <!-- Footer -->
-    <div class="login-footer">
-        <p>© 2026 Military Institute of Science and Technology</p>
-        <p>Mirpur Cantonment, Dhaka, Bangladesh</p>
-    </div>
-
 </div><!-- /login-card -->
 
 <script>
@@ -358,5 +352,6 @@ function check() { btn.disabled = !(ident.value.trim() && password.value); }
 ident.addEventListener('input', check);
 password.addEventListener('input', check);
 </script>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>
