@@ -69,9 +69,7 @@ body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     background: var(--navy);
     display: flex; flex-direction: column;
-    align-items: center; justify-content: flex-start;
     position: relative; overflow-x: hidden;
-    padding: 4rem 1rem 0;
 }
 
 /* Background */
@@ -229,6 +227,12 @@ body {
 .login-footer p { font-size: .73rem; color: #9aa5b8; margin: 0; line-height: 1.75; }
 
 .alert { border-radius: 10px; font-size: .875rem; }
+
+.login-wrapper {
+    flex: 1; display: flex;
+    align-items: center; justify-content: center;
+    padding: 2rem 1rem;
+}
 </style>
 </head>
 <body>
@@ -238,6 +242,7 @@ body {
 <div class="bg-glow bg-glow-3"></div>
 <div class="bg-grid"></div>
 
+<div class="login-wrapper">
 <div class="login-card">
 
     <!-- Header -->
@@ -343,6 +348,7 @@ body {
     </div><!-- /login-body -->
 
 </div><!-- /login-card -->
+</div><!-- /login-wrapper -->
 
 <script>
 const ident    = document.querySelector('input[name="identifier"]');

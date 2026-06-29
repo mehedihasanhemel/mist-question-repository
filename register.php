@@ -50,8 +50,7 @@ body {
     font-family:'Segoe UI',system-ui,sans-serif;
     background:var(--navy);
     display:flex; flex-direction:column;
-    align-items:center; justify-content:flex-start;
-    position:relative; overflow-x:hidden; padding-top:3rem;
+    position:relative; overflow-x:hidden;
 }
 .bg-glow { position:fixed; border-radius:50%; filter:blur(90px); opacity:.3; pointer-events:none; }
 .bg-glow-1 { width:500px;height:500px;background:#1e3a6e;top:-120px;left:-150px; }
@@ -62,9 +61,14 @@ body {
                      linear-gradient(90deg,rgba(255,255,255,.7) 1px,transparent 1px);
     background-size:40px 40px;
 }
+.login-wrapper {
+    flex:1; display:flex;
+    align-items:center; justify-content:center;
+    padding:2rem 1rem;
+}
 .mist-login-card {
     position:relative;z-index:10;
-    width:100%;max-width:440px;margin:1.5rem;
+    width:100%;max-width:440px;
     background:#fff;border-radius:20px;
     box-shadow:0 24px 80px rgba(0,0,0,.45);
     overflow:hidden;
@@ -115,6 +119,7 @@ body {
 <div class="bg-glow bg-glow-2"></div>
 <div class="bg-grid"></div>
 
+<div class="login-wrapper">
 <div class="mist-login-card">
     <div class="mist-login-header">
         <img src="/qrepo/assets/mist-logo.svg" alt="MIST Logo" class="mist-login-logo">
@@ -173,9 +178,8 @@ body {
         </div>
     </div>
 
-    <div class="mist-login-footer">
-    </div>
-</div>
+</div><!-- /mist-login-card -->
+</div><!-- /login-wrapper -->
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

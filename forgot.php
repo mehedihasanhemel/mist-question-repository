@@ -28,12 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <style>
 *,*::before,*::after{box-sizing:border-box}
 :root{--gold:#c9a84c;--gold-light:#e8c96d;--navy:#0d1b2e}
-body{margin:0;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;position:relative;overflow-x:hidden;padding-top:3rem}
+body{margin:0;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;background:var(--navy);display:flex;flex-direction:column;position:relative;overflow-x:hidden}
 .bg-glow{position:fixed;border-radius:50%;filter:blur(90px);opacity:.3;pointer-events:none}
 .bg-glow-1{width:500px;height:500px;background:#1e3a6e;top:-120px;left:-150px}
 .bg-glow-2{width:400px;height:400px;background:#0a2a4a;bottom:-100px;right:-100px}
 .bg-grid{position:fixed;inset:0;pointer-events:none;opacity:.05;background-image:linear-gradient(rgba(255,255,255,.7) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.7) 1px,transparent 1px);background-size:40px 40px}
-.mist-login-card{position:relative;z-index:10;width:100%;max-width:420px;margin:1.5rem;background:#fff;border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,.45);overflow:hidden}
+.login-wrapper{flex:1;display:flex;align-items:center;justify-content:center;padding:2rem 1rem}
+.mist-login-card{position:relative;z-index:10;width:100%;max-width:420px;background:#fff;border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,.45);overflow:hidden}
 .mist-login-header{background:linear-gradient(135deg,var(--navy) 0%,#1a3a5c 100%);padding:2rem 2rem 1.5rem;text-align:center;border-bottom:2px solid rgba(201,168,76,.3)}
 .mist-login-logo{width:72px;height:72px;margin:0 auto .9rem;display:block;filter:drop-shadow(0 6px 18px rgba(0,0,0,.4))}
 .mist-login-title{font-size:1.3rem;font-weight:800;color:#fff;margin:0 0 .25rem}
@@ -58,6 +59,7 @@ body{margin:0;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;backg
 <div class="bg-glow bg-glow-2"></div>
 <div class="bg-grid"></div>
 
+<div class="login-wrapper">
 <div class="mist-login-card">
     <div class="mist-login-header">
         <img src="/qrepo/assets/mist-logo.svg" alt="MIST Logo" class="mist-login-logo">
@@ -91,9 +93,8 @@ body{margin:0;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;backg
             <a href="/qrepo/login.php" class="dropdown-item">← Back to Sign In</a>
         </div>
     </div>
-    <div class="mist-login-footer">
-    </div>
-</div>
+</div><!-- /mist-login-card -->
+</div><!-- /login-wrapper -->
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>
