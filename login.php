@@ -69,9 +69,9 @@ body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     background: var(--navy);
     display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    position: relative; overflow: hidden;
-    padding: 1rem;
+    align-items: center; justify-content: flex-start;
+    position: relative; overflow-x: hidden;
+    padding: 4rem 1rem 0;
 }
 
 /* Background */

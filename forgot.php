@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <style>
 *,*::before,*::after{box-sizing:border-box}
 :root{--gold:#c9a84c;--gold-light:#e8c96d;--navy:#0d1b2e}
-body{margin:0;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+body{margin:0;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;position:relative;overflow-x:hidden;padding-top:3rem}
 .bg-glow{position:fixed;border-radius:50%;filter:blur(90px);opacity:.3;pointer-events:none}
 .bg-glow-1{width:500px;height:500px;background:#1e3a6e;top:-120px;left:-150px}
 .bg-glow-2{width:400px;height:400px;background:#0a2a4a;bottom:-100px;right:-100px}

@@ -92,6 +92,7 @@ $footerClass = $footerClass ?? '';
     background: #0d1b2e;
     color: rgba(255,255,255,.75);
     margin-top: auto;
+    width: 100%;
     border-top: 1px solid rgba(201,168,76,.2);
     font-family: 'Segoe UI', system-ui, sans-serif;
 }

@@ -50,8 +50,8 @@ body {
     font-family:'Segoe UI',system-ui,sans-serif;
     background:var(--navy);
     display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    position:relative; overflow:hidden;
+    align-items:center; justify-content:flex-start;
+    position:relative; overflow-x:hidden; padding-top:3rem;
 }
 .bg-glow { position:fixed; border-radius:50%; filter:blur(90px); opacity:.3; pointer-events:none; }
 .bg-glow-1 { width:500px;height:500px;background:#1e3a6e;top:-120px;left:-150px; }
