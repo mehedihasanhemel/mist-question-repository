@@ -92,9 +92,8 @@ body{margin:0;min-height:100vh;font-family:'Segoe UI',system-ui,sans-serif;backg
         </div>
     </div>
     <div class="mist-login-footer">
-        <p>© 2026 Military Institute of Science and Technology</p>
-        <p>Mirpur Cantonment, Dhaka, Bangladesh</p>
     </div>
 </div>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

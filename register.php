@@ -174,9 +174,8 @@ body {
     </div>
 
     <div class="mist-login-footer">
-        <p>© 2026 Military Institute of Science and Technology</p>
-        <p>Mirpur Cantonment, Dhaka, Bangladesh</p>
     </div>
 </div>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

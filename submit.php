@@ -271,5 +271,6 @@ function selectFolder(id) {
     updateSubmit();
 }
 </script>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>

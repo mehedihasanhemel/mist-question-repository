@@ -825,5 +825,6 @@ document.getElementById('fileViewerModal').addEventListener('hidden.bs.modal', (
     viewerFrame.src = '';
 });
 </script>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
 </body>
 </html>
